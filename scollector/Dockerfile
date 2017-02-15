@@ -3,8 +3,9 @@ FROM fedora:25
 MAINTAINER mian <gopher.mian@outlook.com>
 
 ADD scollector .
-ADD collectors ./collectors
+# ADD collectors ./collectors
 ADD scollector.toml .
 ADD jq /bin
+ADD entrypoint.sh .
 
-ENTRYPOINT ["./scollector"]
+ENTRYPOINT ["bash", "./entrypoint.sh"]
