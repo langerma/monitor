@@ -43,13 +43,10 @@ CommandHookPath = "/opt/bosun/monitor/bosun-conf/commit.sh"
 
 # Configuration to enable the OpenTSDB Backend
 [OpenTSDBConf]
-<<<<<<< HEAD
 	Host = "localhost:4242"
 #	# Default is 2.1, certain features like filters are enabled when the version is set to 2.2
-=======
 	Host = "opentsdb:4242"
 	# Default is 2.1, certain features like filters are enabled when the version is set to 2.2
->>>>>>> a80b174d335efd5645c1351a7aecb712d48297c3
 	Version = 2.2
 #	# ResponseLimit will make requests error if the response from opentsdb is larger than this setting in bytes. Default of 1MB
 	ResponseLimit = 25000000
@@ -81,15 +78,12 @@ CommandHookPath = "/opt/bosun/monitor/bosun-conf/commit.sh"
 # for production setups. Defaults for ledis are below but would be ignored since redis takes
 # precedence
 [DBConf]
-<<<<<<< HEAD
 #	LedisDir = "/data/ledis_data"
 #	LedisBindAddr = "0.0.0.0:9565"	
     redisHost = "localhost:6379"
-=======
 #	RedisHost = "redis:6379"
-	LedisDir = "/data/ledis_data"
-	LedisBindAddr = "0.0.0.0:9565"	
->>>>>>> a80b174d335efd5645c1351a7aecb712d48297c3
+#	LedisDir = "/data/ledis_data"
+#	LedisBindAddr = "0.0.0.0:9565"	
 
 # Configuration to enable Bosun to be able to send email notifications
 [SMTPConf]
